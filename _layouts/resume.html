@@ -236,9 +236,10 @@
         </header>
 
         
-        {% for detail in site.data.detail %}
+        {% for detail in site.data.details %}
         <div class="resume-item">
-        <p class="resume-item-copy">{{ detail }}</p>
+          <h4 class="resume-item-details">{{detail.detail}}<h4>
+        <p class="resume-item-copy">{{ detail.description }}</p>
         </div>
         {% endfor %}
          
